@@ -3,7 +3,7 @@
 */
 
 #include "calc.h"
-#include "calc_test.h"
+#include "calc_docs.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,8 +33,8 @@ void show_result(int argc, char** argv, int choice) {
 } 
 
 int main(int argc, char** argv) {
-    if(argc >= 2 && strcmp(argv[1], "test") == 0) {
-        calc_test();
+    if(argc >= 2 && strcmp(argv[1], "doc") == 0) {
+        calc_generate_docs();
         return 0;
     }
 

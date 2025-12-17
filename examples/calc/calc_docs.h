@@ -4,4 +4,4 @@
 
 #pragma once
 
-void calc_test(void);
+void calc_generate_docs(void);
