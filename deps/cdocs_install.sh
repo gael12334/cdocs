@@ -13,7 +13,7 @@ fi
 
 # 3. create folder
 if [ ! -d "../src/cdocs" ]; then
-    mkdir ./src/cdocs
+    mkdir ../src/cdocs
 else
     rm -rf ../src/cdocs
     mkdir ../src/cdocs
