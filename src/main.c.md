@@ -8,8 +8,8 @@
 ### Returns: `_cdocs_fn_f_struct`
 Object containing the function name and description.
 ### Parameters
-`_name` : The function name.
-`_desc` : The description.
+- `_name` : The function name.
+- `_desc` : The description.
 
 ---
 ## `_cdocs_fn_r`
@@ -18,8 +18,8 @@ Object containing the function name and description.
 ### Returns: `_cdocs_fn_r_struct`
 Object containing the return type and description.
 ### Parameters
-`_type` : The return type of the function.
-`_desc` : The description.
+- `_type` : The return type of the function.
+- `_desc` : The description.
 
 ---
 ## `_cdocs_fn_p`
@@ -28,8 +28,8 @@ Object containing the return type and description.
 ### Returns: `_cdocs_fn_p_struct`
 Object containing the parameter signature and description.
 ### Parameters
-`_sig` : Parameter signature.
-`_desc` : The description.
+- `_sig` : Parameter signature.
+- `_desc` : The description.
 
 ---
 ## `_cdocs_generate_documentation`
@@ -38,6 +38,15 @@ Generates a markdown file with provided documentation.
 ### Returns: `void`
 N/A
 ### Parameters
-`const char* subject` : The documentation subject.
-`_cdocs_fn_struct* functions` : An array on the stack containing the functions documentation objects.
+- `const char* subject` : The documentation subject.
+- `_cdocs_fn_struct* functions` : An array on the stack containing the functions documentation objects.
+
+---
+## `_cdocs_code`
+### Description
+Inserts monospace text in descriptions.
+### Returns: `const char*`
+Monospace text.
+### Parameters
+- `x` : Anything.
 

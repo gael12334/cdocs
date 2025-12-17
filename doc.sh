@@ -6,4 +6,5 @@ if [ ! -d "./out" ]; then
 fi
 gcc -o ./out/program -Werror -Wreturn-type -ggdb $(find ./src -name '*.c' -print) -I/usr/include -L/usr/lib -static-libgcc
 chmod +x ./out/program
+./out/program
 cp ./src/main.c.md ./docs/docs.md

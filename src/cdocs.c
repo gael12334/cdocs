@@ -17,7 +17,7 @@ static void _cdocs_generate_function_doc(FILE* file, _cdocs_fn_struct* function)
 
     _cdocs_fn_p_struct* it = function->parameters;
     while(it->signature != NULL) {
-        fprintf(file, "`%s` : %s\n", it->signature, it->description);
+        fprintf(file, "- `%s` : %s\n", it->signature, it->description);
         it++;
     }
     fprintf(file, "\n");
