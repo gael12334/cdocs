@@ -1,1 +1,2 @@
-examples/calc/out/program
+out/
+deps/cdocs/
